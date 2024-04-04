@@ -1,0 +1,99 @@
+@import 'mobile.css';
+
+@media screen and (min-width: 535px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul { 
+        display: flex;
+    }
+
+    header a {
+        border-top: none;
+    }
+
+    .sidebar {
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 730px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+    
+    
+    .cards li {
+        width: calc(50% - 0.5rem);
+        margin-bottom: 0;
+    } 
+}
+
+@media screen and (min-width: 1010px) {
+    .cards li {
+        width: calc(33% - 0.5rem);
+    }
+}
+
+@media screen and (min-width: 1295px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 1rem;
+    }
+    
+    
+    .cards li {
+        width: calc(32% - 0.5rem);
+    }
+    
+    
+    article p {
+        padding-right: 1rem;
+    }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    .cards li:hover {
+        color: #6441A5;
+    }
+}
+  
+
+img {
+    width: 100%; 
+    max-width: 1000px; 
+    /* Add your expected high-resolution image sources here */
+    srcset: "images/rocket640.jpg 640w,
+            images/rocket1024.jpg 1024w,
+            images/rocket1280.jpg 1280w";
+}
+  
+  @media (max-width: 1500px) {
+    img {
+      width: 50vw;
+    }
+  }
+  
+  @media (max-width: 730px) {
+    img {
+      width: 70vw;
+    }
+  }
+  
+  @media (max-width: 530px) {
+    img {
+      width: 80vw;
+    }
+  }
+  
+
+
+
